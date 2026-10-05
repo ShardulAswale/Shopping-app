@@ -1,14 +1,22 @@
-# Getting Started with Create React App
+# Shopping App
 
-## Available Scripts
+React shopping-cart prototype with a fixed product catalogue.
 
-In the project directory, you can run:
+## How it works
 
-### `npm start`
+`App.js` manages products and cart state, persists the cart in browser local storage and routes to a checkout summary. `PayNow` uses react-to-print to print the displayed summary.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-=======
-# Shoping-app
-Bare bones e-commerce website which can be modified to connect to a Database and add styling to.
+## Usage
 
+Requires Node.js and npm. From the repository root:
+
+```sh
+npm install
+npm start
+```
+
+Open `http://localhost:3000`. `npm run build` creates static files in `build/`.
+
+## Notes
+
+Checkout displays and prints a summary; it does not process payments. No database or application backend is included. The current `deploy` script calls `master` rather than the installed `gh-pages` tool and needs correction before use.
